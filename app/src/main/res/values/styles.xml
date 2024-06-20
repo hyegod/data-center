@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_large_semi_bold">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/text_large_semi_bold_color</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+
+    </style>
+
+    <style name="text_semi_bold">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/text_large_semi_bold_color</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+
+    </style>
+
+    <style name="text_body_regular">
+        <item name="android:textColor">@color/text_body_regular_color</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="OvalShape">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="roundedThumbnailNews">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="text_menu">
+        <item name="android:textColor">@color/text_body_regular_color</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menu_home">
+
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.next.up.code.datacenter.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_menu_home_to_viewerImageFragment"
+            app:destination="@id/viewerImageFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_driveFragment"
+            app:destination="@id/driveFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_imagesFragment"
+            app:destination="@id/imagesFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_documentsFragment"
+            app:destination="@id/documentsFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_audioActivity"
+            app:destination="@id/audioActivity" />
+        <action
+            android:id="@+id/action_menu_home_to_videosFragment"
+            app:destination="@id/videosFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_audioFragment"
+            app:destination="@id/audioFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_detailNewsFragment"
+            app:destination="@id/detailNewsFragment" />
+        <action
+            android:id="@+id/action_menu_home_to_allLatestFileFragment"
+            app:destination="@id/allLatestFileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_folder"
+        android:name="com.next.up.code.datacenter.ui.file.FileFragment"
+        android:label="fragment_file"
+        tools:layout="@layout/fragment_file">
+        <action
+            android:id="@+id/action_menu_folder_to_detailFileFragment"
+            app:destination="@id/detailFileFragment" />
+        <action
+            android:id="@+id/action_menu_folder_to_driveFragment"
+            app:destination="@id/driveFragment" />
+        <action
+            android:id="@+id/action_menu_folder_to_viewerImageFragment"
+            app:destination="@id/viewerImageFragment" />
+        <action
+            android:id="@+id/action_menu_folder_to_excelViewerFragment"
+            app:destination="@id/excelViewerFragment" />
+        <action
+            android:id="@+id/action_menu_folder_self"
+            app:destination="@id/menu_folder" />
+        <action
+            android:id="@+id/action_menu_folder_to_viewerVideoFragment"
+            app:destination="@id/viewerVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_setting"
+        android:name="com.next.up.code.datacenter.ui.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_menu_setting_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_menu_setting_to_changeProfileFragment"
+            app:destination="@id/changeProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFileFragment"
+        android:name="com.next.up.code.datacenter.ui.detail.DetailFileFragment"
+        android:label="fragment_detail_file"
+        tools:layout="@layout/fragment_detail_file">
+        <action
+            android:id="@+id/action_detailFileFragment_self"
+            app:destination="@id/detailFileFragment" />
+        <action
+            android:id="@+id/action_detailFileFragment_to_driveFragment"
+            app:destination="@id/driveFragment" />
+        <action
+            android:id="@+id/action_detailFileFragment_to_viewerImageFragment"
+            app:destination="@id/viewerImageFragment" />
+        <action
+            android:id="@+id/action_detailFileFragment_to_excelViewerFragment"
+            app:destination="@id/excelViewerFragment" />
+        <action
+            android:id="@+id/action_detailFileFragment_to_viewerVideoFragment"
+            app:destination="@id/viewerVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/driveFragment"
+        android:name="com.next.up.code.datacenter.ui.open_file.DriveFragment"
+        android:label="fragment_drive"
+        tools:layout="@layout/fragment_drive" />
+    <fragment
+        android:id="@+id/viewerImageFragment"
+        android:name="com.next.up.code.datacenter.ui.open_file.ViewerImageFragment"
+        android:label="fragment_viewer_image"
+        tools:layout="@layout/fragment_viewer_image" />
+    <fragment
+        android:id="@+id/excelViewerFragment"
+        android:name="com.next.up.code.datacenter.ui.open_file.ExcelViewerFragment"
+        android:label="fragment_excel_viewer"
+        tools:layout="@layout/fragment_excel_viewer" />
+    <activity
+        android:id="@+id/detailFileActivity2"
+        android:name="com.next.up.code.datacenter.ui.detail.DetailFileActivity"
+        android:label="activity_detail_file"
+        tools:layout="@layout/activity_detail_file" />
+    <dialog
+        android:id="@+id/dialogAddFolderFragment"
+        android:name="com.next.up.code.datacenter.ui.dialog.DialogAddFolderFragment"
+        android:label="fragment_dialog_add_folder"
+        tools:layout="@layout/fragment_dialog_add_folder">
+        <action
+            android:id="@+id/action_dialogAddFolderFragment_to_detailFileFragment"
+            app:destination="@id/detailFileFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/imagesFragment"
+        android:name="com.next.up.code.datacenter.ui.home.image.ImagesFragment"
+        android:label="fragment_images"
+        tools:layout="@layout/fragment_images" >
+        <action
+            android:id="@+id/action_imagesFragment_to_viewerImageFragment"
+            app:destination="@id/viewerImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="com.next.up.code.datacenter.ui.home.document.DocumentsFragment"
+        android:label="fragment_documents"
+        tools:layout="@layout/fragment_documents" >
+        <action
+            android:id="@+id/action_documentsFragment_to_driveFragment"
+            app:destination="@id/driveFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/audioActivity"
+        android:name="com.next.up.code.datacenter.ui.home.audio.AudioActivity"
+        android:label="activity_audio"
+        tools:layout="@layout/activity_audio" />
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.next.up.code.datacenter.ui.home.video.VideosFragment"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos" >
+        <action
+            android:id="@+id/action_videosFragment_to_viewerVideoFragment"
+            app:destination="@id/viewerVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="com.next.up.code.datacenter.ui.home.audio.AudioFragment"
+        android:label="fragment_audio"
+        tools:layout="@layout/fragment_audio" />
+    <fragment
+        android:id="@+id/detailNewsFragment"
+        android:name="com.next.up.code.datacenter.ui.home.news.detail.DetailNewsFragment"
+        android:label="fragment_detail_news"
+        tools:layout="@layout/fragment_detail_news" />
+    <fragment
+        android:id="@+id/allLatestFileFragment"
+        android:name="com.next.up.code.datacenter.ui.home.file.AllLatestFileFragment"
+        android:label="fragment_all_latest_file"
+        tools:layout="@layout/fragment_all_latest_file" >
+        <action
+            android:id="@+id/action_allLatestFileFragment_to_viewerVideoFragment"
+            app:destination="@id/viewerVideoFragment" />
+        <action
+            android:id="@+id/action_allLatestFileFragment_to_viewerImageFragment"
+            app:destination="@id/viewerImageFragment" />
+        <action
+            android:id="@+id/action_allLatestFileFragment_to_driveFragment"
+            app:destination="@id/driveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.next.up.code.datacenter.ui.setting.password.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/changeProfileFragment"
+        android:name="com.next.up.code.datacenter.ui.setting.detail.ChangeProfileFragment"
+        android:label="fragment_change_profile"
+        tools:layout="@layout/fragment_change_profile" />
+    <fragment
+        android:id="@+id/viewerVideoFragment"
+        android:name="com.next.up.code.datacenter.ui.open_file.ViewerVideoFragment"
+        android:label="fragment_viewer_video"
+        tools:layout="@layout/fragment_viewer_video" />
+</navigation>

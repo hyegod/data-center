@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorSecondary">#E1E1E1</color>
+    <color name="unselectedColor">#797979</color>
+    <color name="primaryColor">#337CCF</color>
+    <color name="colorHelper">#EF3022</color>
+    <color name="secondaryContainer">#C2DEFF</color>
+    <color name="colorDialog">#F6F6F6</color>
+    <color name="text_large_semi_bold_color">#4E4E4E</color>
+    <color name="text_body_regular_color">#555454</color>
+
+    // Edit Text
+    <color name="edit_text_color">#F1F1F1</color>
+
+    <!--    Button Color-->
+    <color name="colorButtonCancel">#FFFFFF</color>
+    <!-- Card-->
+
+    <!--  Color Background FileType  -->
+
+    <color name="colorBackground">#F6F6F6</color>
+    <color name="colorPDF">#FF7070</color>
+    <color name="colorImage">#009F10</color>
+    <color name="colorDocs">#3686FF</color>
+    <color name="colorExcel">#27D600</color>
+    <color name="colorPPT">#FF521E</color>
+    <color name="colorVideo">#80D8FF</color>
+    <color name="colorAudio">#FFD180</color>
+
+    <color name="colorCard">#FFFFFF</color>
+
+    <color name="dark">#555454</color>
+</resources>

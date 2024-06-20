@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Datacenter" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorAccent">@color/primaryColor</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <style name="Theme.Datacenter" parent="Base.Theme.Datacenter" />
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSurface">@color/black</item>
+        <item name="colorOnSurface">@color/primaryColor</item>
+        <item name="colorSecondaryContainer">@color/secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/primaryColor</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="colorOnSurfaceVariant">@color/unselectedColor</item>
+    </style>
+
+    <style name="RoundedDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/background_rounded_dialog</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextInputLayout.OutlineBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorControlActivated">@color/primaryColor</item>
+        <item name="helperTextTextColor">@color/colorHelper</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="boxStrokeColor">@color/primaryColor</item>
+    </style>
+
+</resources>

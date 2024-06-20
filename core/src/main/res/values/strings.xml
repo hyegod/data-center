@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">datacenter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_file">File</string>
+    <string name="menu_setting">Setting</string>
+    <string name="text_header_file_latest">File Terbaru</string>
+    <string name="text_more">Lihat Semua</string>
+    <string name="text_new">Baru</string>
+    <string name="text_add_folder">Buat Folder</string>
+    <string name="text_upload_file">Unggah</string>
+    <string name="text_take_picture">Ambil Foto</string>
+    <string name="text_new_folder">Buat Folder Baru</string>
+    <string name="text_save">Simpan</string>
+    <string name="text_cancel">Batal</string>
+    <string name="text_header_favorite">File Favorite</string>
+    <string name="text_alert_favorite">Ketuk ikon titik tiga disamping file, lalu \"Tambahkan ke Favorite\".</string>
+    <string name="text_share">Bagikan</string>
+    <string name="text_rename">Ubah Nama</string>
+    <string name="text_add_to_favorite">Tambahkan ke Favorite</string>
+    <string name="text_details">Details</string>
+    <string name="text_delete">Hapus</string>
+    <string name="text_download">Unduh</string>
+</resources>
